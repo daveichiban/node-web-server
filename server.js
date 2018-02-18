@@ -53,7 +53,13 @@ app.get("/about", (req, res) => {
 
 });
 
+app.get("/projects", (req, res) => {
+  res.render("projects.hbs", {
+    pageTitle: "Projects",
+    welcomeMessage: "Feel free to look at my portfolio"
+  });
 
+});
 
 app.listen(port, ()=> {
   console.log(`Server is listining on port ${port}`)
